@@ -3,9 +3,14 @@
 @import "./img.css";
 
 /* mobile first approach design */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
 .container {
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
@@ -15,12 +20,15 @@
     ;
 }
 
+/* header */
+
 .header {
     background-image: url(../images/hero-img.jpg);
     background-size: cover;
     background-position: center;
     grid-area: header;
     padding: 2rem 0 5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -51,6 +59,7 @@ span {
     font-weight: bold;
 }
 
+/* main */
 main {
     display: grid;
     grid-auto-rows: minmax(100px, auto);
@@ -91,9 +100,9 @@ main {
 
 /* footer */
 footer {
-    padding: 0.5rem;
+    margin: 1rem 0 0 0;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
@@ -102,3 +111,9 @@ footer a {
     text-decoration: none;
     color: #4A681E;
 }
+
+/* media query  desktop version */
+@media(min-width: 750px) {
+    /* TODO */
+}
+
