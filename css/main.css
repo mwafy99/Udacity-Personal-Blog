@@ -32,7 +32,7 @@
 
 .logo {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
 }
@@ -131,11 +131,18 @@ main {
     margin: 2rem 0 0.5rem;
 }
 
+.main-body h3 {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 2rem 0 0 0;
+}
 .main-body p {
     color: rgba(0, 0, 0, 0.6);
     line-height: 1.5rem;
 }
 
+blockquote {
+    margin: 0 0 2rem 0;
+}
 .main-btn {
     margin-top: 2rem;
     display: block;
@@ -146,6 +153,7 @@ main {
     border-radius: 0 1rem;
     font-weight: bold;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .main-btn:hover {
