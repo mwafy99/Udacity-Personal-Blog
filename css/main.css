@@ -1,0 +1,104 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./img.css";
+
+/* mobile first approach design */
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.header {
+    background-image: url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: header;
+    padding: 2rem 0 5rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-body {
+    color: #fff;
+    text-align: center;
+    text-align: center;
+    margin: 8rem 0 2rem;
+}
+
+.header-body h1 { 
+    margin-bottom: 0.5rem;
+}
+
+.header-body p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+span {
+    color: #4A681E;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "main-body"
+    "main-images"
+    ;
+}
+
+.main-img {
+    grid-area: main-images;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.main-body {
+    grid-area: main-body;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.main-body h2 {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #DC403E;
+    margin: 2rem 0 0.5rem;
+}
+
+.main-body p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+/* footer */
+footer {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4A681E;
+}
