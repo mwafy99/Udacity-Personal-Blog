@@ -1,0 +1,151 @@
+@import "./reset.css";
+@import "./fonts.css";
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar"
+    "footer"
+    ;
+}
+
+/* header */
+header {
+    grid-area: header;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #37B4CF;
+}
+
+nav ul li {
+    list-style: none;
+    border: 1px solid #37B4CF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover {
+    box-shadow: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #37B4CF;
+}
+
+.header-body {
+    color: #CC8324;
+    font-weight: bold;
+}
+
+/* main */
+main {
+    grid-area: main;
+    padding: 1rem;
+    text-align: center;
+}
+
+main h2 ,h3{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+main p {
+    color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    margin: auto;
+}
+
+main img {
+    width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+main figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+article.one {
+    margin: 4rem 0;
+}
+span.first-word {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+span.yellow {
+    color: #CC8324;
+}
+
+span.blue {
+    color: #37B4CF;
+}
+
+/* sidebar */
+div.sidebar {
+    padding: 1rem;
+    grid-area: sidebar;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about h3 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.about img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about p {
+    color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+.social h3 {
+    font-size: 1.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.social a {
+    display: block;
+    margin: 0.3rem 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #CC8324;
+}
+
+
+/* footer */
+footer {
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
